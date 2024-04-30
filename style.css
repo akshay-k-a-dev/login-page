@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf6e2; /* Light green background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    backdrop-filter: blur(10px); /* Blur effect */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 400px;
+    width: 100%;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center; /* Centering the heading */
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input[type="email"],
+.input-group input[type="password"] {
+    width: calc(100% - 40px); /* Adjust width to leave space for the button */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.password-container input[type="password"],
+.password-container input[type="text"] {
+    width: calc(100% - 40px); /* Adjust width to leave space for the button */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.password-container input[type="password"]:focus,
+.password-container input[type="text"]:focus {
+    border-color: #4CAF50;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container input[type="password"] {
+    width: calc(100% - 40px); /* Adjust width to leave space for the button */
+    padding-right: 40px; /* Add padding for the button */
+}
+
+.password-container input[type="text"] {
+    width: calc(100% - 40px); /* Adjust width to leave space for the button */
+    padding-right: 40px; /* Add padding for the button */
+}
+
+.password-container .show-password {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.password-container .show-password img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.password-container .show-password:hover img {
+    opacity: 1;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Adding transform transition */
+}
+
+input[type="submit"]:hover {
+    background-color: #2ecc71; /* Neon green effect on hover */
+    transform: scale(1.05); /* Increase size on hover */
+}
+
+.signup-link {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.signup-link p {
+    color: #333;
+}
+
+.signup-link a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.signup-link a:hover {
+    color: #45a049;
+}
